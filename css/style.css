@@ -1,0 +1,426 @@
+html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: optimizeLegibility;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:focus,
+a:active,
+em {
+  text-decoration: none;
+  font-style: normal;
+}
+
+::selection {
+  color: #fff;
+  background: #8a929b;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: #e2f3f5;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1px;
+}
+
+.grid {
+  width: 100%;
+  max-width: 1364px !important;
+  margin: 0 auto;
+}
+
+.bgimage {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bgfixed {
+  background-attachment: fixed;
+}
+
+.nomargin {
+  margin: 0;
+  padding: 0;
+}
+
+.marginfix {
+  margin-top: 170px;
+}
+
+.paddingfix {
+  padding-top: 52px;
+}
+
+.endmargin {
+  margin-bottom: 150px;
+}
+
+.mt0 {
+  margin-top: 0;
+}
+
+.mb0 {
+  margin-bottom: 0;
+}
+
+.mt30 {
+  margin-top: 30px;
+}
+
+.mb30 {
+  margin-bottom: 30px;
+}
+
+.mt60 {
+  margin-top: 60px;
+}
+
+.mb60 {
+  margin-bottom: 60px;
+}
+
+.mt80 {
+  margin-top: 80px;
+}
+
+.mb80 {
+  margin-bottom: 80px;
+}
+
+.mt300 {
+  margin-top: 300px;
+}
+
+.mb300 {
+  margin-bottom: 300px;
+}
+
+.mr15 {
+  margin-right: 15px;
+}
+
+.p20 {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+
+.r90 {
+  transform: rotate(90deg);
+}
+
+.hidden {
+  display: none;
+}
+
+.logo-container {
+  height: 80px;
+  width: 80px;
+  position: fixed;
+  top: 35px;
+  left: 35px;
+  z-index: 3;
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+}
+
+.logo-container:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.logo-container img {
+  height: 80px;
+  width: 80px;
+}
+
+.h1-title {
+  width: auto;
+  height: auto;
+  font-family: "Monument Extended", sans-serif;
+  font-weight: normal;
+  font-size: 96px;
+  line-height: 106px;
+  text-transform: uppercase;
+}
+
+.p-text {
+  width: auto;
+  height: auto;
+  font-family: "Silka", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 35px;
+}
+
+.semibold {
+  font-weight: 600;
+}
+
+.white {
+  color: #fff;
+}
+
+.off-white {
+  color: #ededed;
+}
+
+.lightgray {
+  color: #999;
+}
+
+.gray {
+  color: #666;
+}
+
+.darkgray {
+  color: #333;
+}
+
+.black {
+  color: #000;
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.active {
+  color: #fff !important;
+}
+
+.home-hero {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+.home-hero div {
+  animation: fadein 1s;
+  -webkit-animation: fadein 1s;
+  -moz-animation: fadein 1s;
+  -o-animation: fadein 1s;
+}
+
+.home-hero-grid-container {
+  position: relative;
+  height: 100vh;
+}
+
+.home-hero-grid {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.hero {
+  width: 100%;
+  height: 85vh;
+  margin: 0;
+}
+
+.hero-grid-container {
+  position: relative;
+  height: 85vh;
+}
+
+.hero-grid {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.home-hero-grid h4,
+.hero-grid h4 {
+  padding-top: 30px;
+}
+
+.hero-arrow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  padding: 10px 10px 30px 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-arrow a {
+  padding: 10px 10px 30px 10px;
+}
+
+.contact-hero-grid-container {
+  position: relative;
+  height: 100vh;
+}
+
+.contact-hero-grid {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.off-white-a {
+  color: #fff;
+  transition: color 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+}
+
+.off-white-a:visited {
+  color: #fff;
+}
+
+.off-white-a:hover,
+.off-white-a:focus {
+  color: #ededed;
+}
+
+.off-white-a:active {
+  color: #fff;
+}
+
+.lightgray-a {
+  color: #999;
+  transition: color 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+}
+
+.lightgray-a:visited {
+  color: #999;
+}
+
+.lightgray-a:hover,
+.lightgray-a:focus {
+  color: #666;
+}
+
+.lightgray-a:active {
+  color: #444;
+}
+
+.gray-a {
+  color: #666;
+  transition: color 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+}
+
+.gray-a:visited {
+  color: #666;
+}
+
+.gray-a:hover,
+.gray-a:focus {
+  color: #141414;
+}
+
+.gray-a:active {
+  color: #000;
+}
+
+.black-a {
+  color: #000;
+  transition: color 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+}
+
+.black-a:visited {
+  color: #000;
+}
+
+.black-a:hover,
+.black-a:focus {
+  color: #8a929b;
+}
+
+.black-a:active {
+  color: #000;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.f1 {
+  flex: 1;
+}
+
+.block {
+  display: block;
+}
